@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =========== Dùng chung ============= */
+.content{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+a,li{
+    text-decoration: none;
+    list-style-type: none;
+}
+.btn{
+    width: 118px;
+    min-width: 118px;
+    height: 50px;
+    padding: 11px 41px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #FFFFFF;
+    text-align: center;
+    background: #171100;
+    border-radius: 24.5px;
+}
+
+/* =================== Header ================= */
+.header{
+    padding: 36px 0 8px;
+    background: #FFFCF4;
+    z-index: 1;
+}
+.header.sticky{
+    position: sticky;
+    top: -28px;
+}
+.header nav{
+    display: flex;
+}
+.header .sub-nav{
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    position: relative;
+}
+.header .img-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .sub-nav a{
+    padding: 8px 21px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    text-align: center;
+    color: #5F5B53;
+}
+.header .sub-nav li:first-child a{
+    font-weight: 600;
+    color: #171100;
+}
+.header .sub-nav a:hover{
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+.header .sub-nav::after{
+    content: " ";
+    display: inline-block;
+    position: absolute;
+    background: #171100;
+    border-radius: 1px;
+    transform: translateX(21px) ;
+    bottom: 10px;
+    width: 12px;
+    height: 2px;
+}
+.header li:last-child{
+    margin-right: 70px;
+}
+.header .action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .btn{
+    width: 144px;
+    min-width: 144px;
+    color: #FFFFFF;
+}
